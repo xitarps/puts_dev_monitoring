@@ -14,7 +14,7 @@ class AlertContext
 
     @platform.notify(message:)
 
-    @last_alert_time Time.now
+    @last_alert_time = Time.now
   end
 
   def avoid_flood?
