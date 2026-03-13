@@ -70,7 +70,7 @@ class NotificaionManager
         line = file.gets
 
         if line
-          alert.notify(message: line) if KEYWORDS.any? { ||keyword| line =~ keyword}
+          alert.notify(message: line) if NotificaionManager::KEYWORDS.any? { |keyword| line =~ keyword}
         else
           # Verificando se teve rotação de arquivo de log
           # Se o arquivo atual for menor que a posição que estamos, elefoi rotacionado/limpo
