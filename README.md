@@ -13,7 +13,7 @@ sudo systemctl status rails-logger
 ## ver logs
 jornalctl -u rails-logger -f
 
-echo "ERROR -- ; ActiveRecord::ConnectionNotEstablished: TESTE :D!! vim do console!"
+echo "ERROR -- ; ActiveRecord::ConnectionNotEstablished: TESTE :D!! vim do console!" >> /home/xita/Desktop/list/log/development.log
 
 ## localizar path do ruby do ambiente
 which ruby
