@@ -2,6 +2,9 @@ require 'net/http'
 require 'uri'
 require 'json'
 
+require_relative 'models/alert_context'
+require_relative 'models/alert_strategies/discord'
+
 class NotificaionManager
   NOTIFIERS = [
     {
