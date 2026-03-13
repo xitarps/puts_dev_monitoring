@@ -34,7 +34,7 @@ module AlertStrategies
     def build_request
       http = Net::HTTP.new(parsed_uri.host, parsed_uri.port)
       http.use_ssl = true
-      request = Net::HTTP::POST.new(parsed_uri.request_uri, HEADERS)
+      request = Net::HTTP::Post.new(parsed_uri.request_uri, HEADERS)
       request.body = payload.to_json
       [ http, request ]
     end
