@@ -10,7 +10,7 @@ class NotificaionManager
     {
       platform: 'Discord',
       log_file_path: '/home/xita/Desktop/list/log/development.log',
-      uri: 'https://discord.com/api/webhooks/1481863575936172123/KC5mXte5T2b6Ek3-W_KdNv76PU0BkLT499tj9Bvf4HIbiqwJ3b28DrkJ3PmeqdurFcH3'#ENV[DISCORD_WEBHOOK_URL]
+      uri: ENV[DISCORD_WEBHOOK_URL]
     }
   ]
 
